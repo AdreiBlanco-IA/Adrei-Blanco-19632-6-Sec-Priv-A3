@@ -4,57 +4,59 @@ Organización: NOVA, A.C.
 
 ## El objetivo de negocio
 
-NOVA quiere abrir un portal en internet para que los papás puedan entrar y ver las calificaciones y
-las boletas de sus hijos sin tener que ir al colegio a pedirlas. Este portal se conectaría a la
-plataforma de control escolar que ya tiene el colegio, la que corre en el servidor con Windows Server
-2016.
+Hace un año NOVA contrató un asistente pedagógico de inteligencia artificial para redactar los
+comentarios de las boletas y los reportes de conducta a partir de las notas que escriben las
+maestras. Desde hace unos meses, además de las calificaciones y las notas, también le suben los
+reportes psicopedagógicos, para que los comentarios salgan más completos.
 
-Este es un cambio de negocio, no de seguridad: el colegio lo quiere para dejar de imprimir boletas y
-para que los papás dejen de llamar a la administración cada vez que necesitan una calificación.
+Este es un objetivo de negocio, no de seguridad: el colegio lo hace para que las maestras terminen
+más rápido las boletas y para que los comentarios de conducta salgan mejor escritos.
 
 ## Pregunta 1. Qué tipo de prueba elegiría
 
-Elegiría una prueba de penetración.
+Elegiría una auditoría.
 
-El portal va a quedar expuesto en internet y va a dar acceso a datos de alumnos que son menores de
-edad, incluidas calificaciones y reportes de conducta. Antes de dejar que cualquier papá entre desde
-su casa, necesito saber si alguien de fuera podría realmente entrar al sistema y hasta dónde llegaría,
-no solo si hay fallas conocidas en la lista que arroja un escaneo.
+Lo que quiero saber no es si alguien puede entrar al asistente desde fuera, sino si el colegio está
+cumpliendo lo que debería cumplir al subir información de alumnos menores de edad a un servicio
+externo. El asistente se contrató en el plan de consumidor, sin ningún acuerdo de tratamiento de
+datos, y nadie ha leído los términos que dicen que el proveedor puede usar el contenido para mejorar
+sus servicios. Una auditoría revisa justo eso: si hay un contrato, si hay consentimiento de los
+tutores, y si alguien decidió con conocimiento subir los reportes psicopedagógicos o si simplemente
+se empezó a hacer.
 
 ## Pregunta 2. Por qué descarté los otros dos tipos
 
-Escaneo de vulnerabilidades. Lo descarté como prueba principal porque un escaneo solo dice que hay una
-puerta sin llave, no dice si esa puerta lleva a algún lado. Con un servidor tan viejo como el de
-control escolar, un escaneo iba a sacar cientos de hallazgos y no me iba a decir si alguien puede de
-verdad entrar y leer los datos de un alumno.
+Prueba de penetración. La descarté porque el asistente corre en la nube del proveedor, no en un
+servidor de NOVA. El colegio no administra esa infraestructura y no puede autorizar una prueba de
+penetración sobre algo que no es suyo, igual que pasa con las otras aplicaciones de terceros que el
+colegio solo puede analizar y argumentar, no configurar ni probar directamente.
 
-Auditoría. La descarté porque una auditoría revisa que el colegio cumpla con lo que dijo que hace, no
-si el sistema resiste un ataque real. NOVA además casi no tiene políticas escritas, así que una
-auditoría en este momento me diría poco. Se puede pasar una auditoría impecable y de todos modos caer
-en el primer intento de entrar de verdad.
+Ejercicio de equipo rojo. Lo descarté porque ese ejercicio mide si el colegio se daría cuenta de un
+ataque real. Aquí el problema no es que alguien esté atacando el sistema, es que el colegio mismo
+decidió subir información sensible a un servicio externo sin revisar antes qué dice el contrato o los
+términos de uso.
 
 ## Pregunta 3. A quién le pediría la autorización
 
 Se la pediría a la directora, porque es quien responde legalmente por el colegio y por los datos de
-los alumnos. El maestro de cómputo administra el servidor, pero no tiene la facultad para autorizar
-una prueba sobre datos de menores de edad.
-
-Como la plataforma de control escolar es de un proveedor externo que tiene acceso remoto permanente al
-servidor, también habría que avisarle a él antes de probar, porque el sistema y el servidor están bajo
-su soporte.
+los alumnos. La subdirectora y las maestras usan el asistente todos los días, pero ninguna de ellas
+tiene la facultad para autorizar una revisión sobre cómo se está tratando la información de menores
+de edad y de salud.
 
 El documento de autorización tendría que decir:
 
-Qué sistemas se van a probar, con sus direcciones. En este caso el servidor de control escolar y el
-portal nuevo, no el servidor de archivos que guarda las fotos y los reportes psicopedagógicos, porque
-ese servidor no forma parte de este objetivo de negocio.
+Qué se va a revisar. En este caso el contrato o la falta de contrato con el proveedor del asistente,
+los términos de uso que aceptaron, y qué información se le ha subido hasta ahora, incluidos los
+reportes psicopedagógicos.
 
-Cuándo empieza y cuándo termina la prueba, con fecha y hora de inicio y fin.
+Cuándo empieza y cuándo termina la revisión, con fecha de inicio y fin.
 
-Hasta dónde se puede llegar. Aquí hay que decidir si se pueden usar datos reales de alumnos o solo una
-copia de prueba, porque el sistema maneja datos de salud y datos de menores de edad.
+Hasta dónde se puede llegar. Aquí hay que decidir si la persona que audita puede ver el contenido real
+que se le subió al asistente, dado que incluye datos de salud de alumnos, o solo puede revisar el
+proceso y los documentos.
 
-A quién avisar si se encuentra algo grave y en cuánto tiempo.
+A quién avisar si se encuentra algo grave y en cuánto tiempo. Por ejemplo, si se descubre que ya se
+subió información que nunca debió salir del colegio.
 
-Quién firma. En este caso la directora, junto con el visto bueno del proveedor, porque el servidor no
-es del colegio para tocarlo sin avisarle a quien lo administra.
+Quién firma. En este caso la directora, porque es quien tiene la facultad para decidir qué se hace con
+la cuenta compartida del asistente y con la información de los alumnos.
