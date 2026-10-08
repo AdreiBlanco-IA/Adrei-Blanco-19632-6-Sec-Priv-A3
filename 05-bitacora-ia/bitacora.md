@@ -16,7 +16,7 @@ entender algo y no lo entregué, no lo anoto.
 | 23 sep | Asistente de la materia | Redactar la ficha de decisión sobre NOVA | Un borrador con un objetivo de negocio, el tipo de prueba elegido y quién debía autorizarla | El primer borrador inventó un objetivo que no estaba en ningún documento, un portal para que los papás vieran calificaciones. Lo rechacé y pedí que usara solo lo que sí dice el documento de NOVA, que es el asistente pedagógico de inteligencia artificial que ya está contratado |
 | 23 sep | Asistente de la materia | Resolver y documentar los veinticuatro ejercicios de la práctica de shell | Los comandos y las respuestas de las cuatro preguntas de la investigación | Antes de dejar cualquier respuesta, se corrió cada comando en la terminal para comprobar que el resultado fuera real y no inventado |
 | 23 sep | Asistente de la materia | Escribir la carta de organización de NOVA | Un borrador basado en el documento de la organización que ya tenía | Lo comparé línea por línea contra el documento original, para que no agregara nada que no estuviera ahí |
-| 8 oct | Asistente de IA | Tareas de redacción e interpretación del análisis de malware de la sesión 16: redactar las seis secciones del archivo e interpretar los informes de Triage, VirusTotal y los análisis públicos de stop | — | — |
+| 8 oct | Asistente de IA | Tareas de redacción e interpretación del análisis de malware de la sesión 16 | — | — |
 
 ## Lo que aprendí de usarla
 
