@@ -65,9 +65,15 @@ Resultado del test:
         win.system.providerName: 'Microsoft-Windows-Security-Auditing'
         win.system.systemTime: '2026-10-29T12:00:00.000Z'
 
-Respuesta pregunta:
+Qué NO detecta esta regla:
 
-La regla actual es ciega ante otras formas de persistencia o nombres de tareas distintos. Si cambia el dominio, la regla sigue funcionando porque busca el nombre de la tarea y no la red. Para detectar comportamiento, debes cazar la ejecución desde carpetas de usuario en lugar de un nombre fijo.
+- Si el atacante cambia de dominio, de IP o de hash, la regla sigue sirviendo, porque no busca nada de eso: busca el nombre de la tarea programada, Time Trigger Task.
+- No detecta una variante de stop que le ponga otro nombre a la tarea. El match busca ese texto exacto, y con cualquier otro nombre no dispara.
+- No detecta otras formas de quedarse en el equipo, por ejemplo una clave de registro de Windows en lugar de una tarea programada. En mi análisis de malware anoté que stop también modifica el registro, y esta regla no lo ve.
+- No ve nada antes de la etapa 5. La entrega, la ejecución del archivo y el apagado de Windows Defender pasan antes de que se cree la tarea.
+- Solo funciona si las computadoras de NOVA mandan sus eventos de Windows a Wazuh. Hoy NOVA no tiene ninguna fuente de registro centralizada, así que en el colegio real esta regla todavía no tendría de dónde leer.
+
+Qué tendría que cambiar para detectar el comportamiento y no el indicador: en lugar de buscar un nombre fijo, alertar cuando se cree cualquier tarea programada que ejecute un programa guardado dentro de la carpeta LocalAppData de un usuario, que es donde stop se copia. Un programa normal del colegio no se programa desde esa carpeta, así que la regla seguiría sirviendo aunque la tarea cambie de nombre.
 
 Resumen con mis propias palabras:
 En esta practica comenzamos creando una regla adaptada a mi analisis de malware, de forma que podamos prevenir y detectar ataques de los equiṕos de la organización, en este caso del malware “Stop”, usamos un parametro de level 12 dentro de la regla para indicar que es urgente que alerte cuando detecte un ataque interno de este tipo. Al terminar de crear la regla se creo un Log ficticio controlado que al correr la prueba nos entrego un archivo en formato JSON en el cual podemos ver los detalles del log-in. Esta regla nos ayudara a detectar con este formato los posibles ataques que se generen y a capturar los detalles en este formato. 
