@@ -60,3 +60,13 @@ subió información que nunca debió salir del colegio.
 
 Quién firma. En este caso la directora, porque es quien tiene la facultad para decidir qué se hace con
 la cuenta compartida del asistente y con la información de los alumnos.
+
+## Resumen con mis propias palabras
+
+Con la ficha de decisión aprendí que no toda revisión de seguridad es una prueba técnica. En NOVA el problema del asistente pedagógico no es que alguien lo ataque desde fuera, sino que el propio colegio le sube reportes psicopedagógicos de niños sin contrato y sin haber leído los términos. Por eso elegí una auditoría: revisa si el colegio está haciendo lo que debería, no si el sistema se puede romper.
+
+También entendí que una prueba siempre necesita autorización por escrito de quien sí tiene la facultad de darla. El colegio no puede autorizar una prueba sobre la nube del proveedor, porque no es suya, y dentro del colegio quien decide es la directora.
+
+### Dudas que me quedaron
+
+- Si la auditoría encuentra que ya se subieron reportes que nunca debieron salir del colegio, no sé qué se puede hacer después para recuperarlos o pedir que se borren.
