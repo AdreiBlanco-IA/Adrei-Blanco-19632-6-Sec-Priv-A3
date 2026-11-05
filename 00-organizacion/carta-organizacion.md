@@ -46,3 +46,13 @@ NOVA no tiene a nadie responsable de la seguridad de la información. El maestro
 los dos servidores en sus horas libres, las actualizaciones se dejaron de aplicar hace años, y los
 reportes psicopedagógicos y las fotografías nunca se respaldan. Tampoco hay un inventario de equipos,
 nadie sabe cuántos hay ni si todos siguen funcionando.
+
+## Resumen con mis propias palabras
+
+Escribir la carta me sirvió para conocer a NOVA antes de analizarla. Es un colegio de 240 alumnos, todos menores de edad, con 28 personas y sin nadie a cargo de la seguridad: el maestro de cómputo administra los dos servidores en sus horas libres. Lo que más le dolería perder es la plataforma de control escolar, y lo que más le dolería que se filtrara son los reportes psicopedagógicos y la información de salud, porque el daño lo sufre el niño y no el colegio.
+
+Todo lo que hice después en el semestre sale de aquí: si algo no está en la carta o en la ficha de NOVA, no lo puedo inventar en el inventario ni en los riesgos.
+
+### Dudas que me quedaron
+
+- No sé cómo se maneja el consentimiento de los datos de los alumnos, si los titulares son menores y no pueden consentir por sí mismos.
