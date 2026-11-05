@@ -21,6 +21,7 @@ entender algo y no lo entregué, no lo anoto.
 | 3 nov | Claude (Claude Code con acceso a Chrome) | Redactar el registro de riesgos, sobre el inventario, el análisis de malware y el caso php2shell | Nueve riesgos con P, I, tratamiento y residual, los dos riesgos aceptados y tres recomendaciones del caso php2shell | Lo escribió y lo subió a 01-riesgos/registro-riesgos.md a petición mía. No incluye la verificación de la línea de tiempo contra fuentes primarias. Pendiente: revisar las calificaciones de P e I y anotar aquí qué cambié o rechacé |
 | 3 nov | Claude (Claude Code con acceso a Chrome) | Redactar el perfil NIST CSF 2.0 | Diez renglones con identificadores revisados contra frameworks/CSF-2.0-vigente.csv y la nota de que RESPOND y RECOVER quedaron vacías | Lo escribió y lo subió a 01-riesgos/perfil-nist-csf.md a petición mía. Pendiente: comprobar cada identificador en el Excel y anotar aquí qué cambié o rechacé |
 | 3 nov | Claude (Claude Code con acceso a Chrome) | Completar la sección de lo que no detecta mi regla de Wazuh | Cinco límites de la regla y cómo cambiarla para detectar el comportamiento | Lo agregó a 04-detecciones/regla-wazuh.md a petición mía. La salida del logtest y mi resumen no los tocó: los tengo que poner yo |
+| 4 nov | Claude (Claude Code con acceso a Chrome) | Redactar los resúmenes de fin de entregable del análisis de malware, el inventario, el registro de riesgos, el perfil NIST CSF y esta bitácora, y ordenar en secciones el documento de la regla de Wazuh | Los resúmenes en primera persona con sus dudas, y el documento de Wazuh con el XML en bloque de código | Los subió a mi repositorio a petición mía. Los resúmenes los redactó la IA, no yo; los voy a leer para estudiar y corregir lo que no coincida con lo que entendí |
 
 ## Lo que aprendí de usarla
 
@@ -37,3 +38,11 @@ Lo que sí tengo que hacer es poder explicar por qué cada decisión es la que t
 eso es lo que se revisa en la defensa, no el documento.
 
 Declarar el uso de IA no baja la calificación. No declararlo sí.
+
+## Resumen con mis propias palabras
+
+Llevar la bitácora me obliga a separar lo que hice yo de lo que hizo la IA. En este parcial la usé mucho: para el inventario, el registro de riesgos, el perfil y los resúmenes. Lo que aprendí es que la IA puede escribir algo que suena bien para NOVA, pero cada dato tiene que poder rastrearse a la ficha o a los documentos de la materia, y eso lo tengo que revisar yo antes de defenderlo.
+
+### Dudas que me quedaron
+
+- No sé qué tanto detalle espera el profesor en la columna de qué rechacé, cuando la IA hizo casi todo el entregable.
