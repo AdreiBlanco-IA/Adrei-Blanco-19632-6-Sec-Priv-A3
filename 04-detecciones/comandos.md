@@ -45,3 +45,13 @@ Le saqué hash porque eso permite demostrar después que el archivo que guardé 
 que se generó ese día, sin que nadie le haya cambiado una sola línea. Si no lo hubiera hecho y alguien
 edita el log mañana, ya no tendría forma de probar que la evidencia no fue modificada, y eso le quita
 valor si algún día se necesita mostrar qué pasó.
+
+## Resumen con mis propias palabras
+
+En la práctica de shell aprendí que con pocos comandos se puede leer un registro y encontrar lo que pasó: contar intentos fallidos, sacar las IP que más se repiten y separar un acceso normal de uno sospechoso. Que dos líneas digan Accepted no significa lo mismo; lo que importa es desde dónde entró cada quien y cómo se autenticó.
+
+También vi que una política escrita no protege si nadie la configura, y que sacar el hash de la evidencia sirve para demostrar después que nadie la cambió. Para NOVA esto importa porque hoy no tiene ningún registro que alguien revise, así que un ataque así se descubriría semanas después o nunca.
+
+### Dudas que me quedaron
+
+- No sé cómo se pondría en NOVA una alerta como la que propuse en la pregunta 3, si el colegio no tiene a nadie que revise los registros.
