@@ -58,3 +58,13 @@ fuera las tabletas del programa que terminó, que están en una caja y nadie sab
 celulares personales de las maestras, que no son del colegio pero llevan los grupos de A-17. Los activos
 de arriba salieron de la ficha de la organización, no de una lista del colegio. **Es probable que falte
 algo, y eso ya es un hallazgo.**
+
+## Resumen con mis propias palabras
+
+Hacer el inventario me sirvió para ver que NOVA no sabe bien qué tiene. Los veinte activos salieron de la ficha, no de una lista del colegio, porque esa lista no existe. Aprendí que cada activo tiene una sola propiedad que más duele perder, y que no siempre es la confidencialidad. En los expedientes, lo peor no es que alguien los vea, sino que alguien cambie quién puede recoger a un niño o una alergia sin que nadie se dé cuenta. En la cuenta compartida del asistente, lo que se pierde es saber quién hizo qué.
+
+También vi que muchos activos importantes no son del colegio: el asistente de IA, la empresa de fotografía, la aseguradora y la plataforma de control escolar dependen de terceros. Aunque NOVA no los controla, tienen que estar en el inventario porque ahí viven datos de los alumnos.
+
+### Dudas que me quedaron
+
+- No sé si los catorce celulares personales de las maestras deberían contarse como activos, porque no son del colegio pero llevan los grupos de WhatsApp con fotos de los niños.
