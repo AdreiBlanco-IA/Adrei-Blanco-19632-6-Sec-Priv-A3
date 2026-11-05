@@ -34,3 +34,13 @@ no hay acuerdos por escrito. Eso no se arregla comprando algo.
 
 > Los diez identificadores están verificados contra `frameworks/CSF-2.0-vigente.csv`, que solo trae las
 > subcategorías vigentes. No se usó ningún identificador retirado de la versión 1.1, como PR.AC.
+
+## Resumen con mis propias palabras
+
+El perfil me ayudó a entender la diferencia entre lo que tiene que estar logrado y cómo se logra. La subcategoría dice el resultado, por ejemplo que los respaldos existan y se prueben, y el control es la forma de llegar ahí, como un disco que se conecta cada semana. Si escribo un control en lugar del resultado, el renglón está mal.
+
+Al llenarlo vi que en NOVA casi todo depende de que alguien se haga responsable y de los acuerdos con proveedores, y eso no se arregla comprando una herramienta. RESPOND y RECOVER quedaron vacías porque el colegio no tiene con qué responder ni con qué recuperarse si pasa algo.
+
+### Dudas que me quedaron
+
+- No sé si está bien dejar dos funciones completamente vacías, o si convenía poner un renglón en RECOVER aunque hoy no haya respaldos.
