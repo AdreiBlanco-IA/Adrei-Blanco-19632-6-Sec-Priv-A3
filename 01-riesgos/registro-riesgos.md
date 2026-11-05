@@ -50,3 +50,13 @@ y NOVA no administra el servidor de la plataforma: solo puede exigirle al provee
 | 1 | Preguntarle por escrito al proveedor si la plataforma usa PHP, qué versión, y si ya aplicó el parche | La directora. NOVA no tiene responsable de seguridad, y ése es el hallazgo | Esta semana |
 | 2 | Cuando salga un aviso de una falla grave sin parche, cortar el acceso desde internet al servidor de control escolar, incluido el del proveedor, y reconectarlo solo cuando el proveedor confirme por escrito que aplicó el parche | El maestro de cómputo, con autorización de la directora | El mismo día del aviso |
 | 3 | Para la próxima: nombrar a una persona que reciba los avisos de seguridad y pedirle al proveedor, por contrato, que avise al colegio de cualquier falla grave en un plazo de 24 horas | La directora | Antes de renovar la licencia de la plataforma |
+
+## Resumen con mis propias palabras
+
+Con el registro de riesgos aprendí a separar cuatro cosas que antes mezclaba: el activo, la amenaza, la vulnerabilidad y el impacto. La amenaza tiene que tener sujeto y verbo, y la vulnerabilidad tiene que salir de la ficha de NOVA, no de una lista que sirva para cualquier organización. Por eso en cada renglón puse el detalle del colegio, como que la carpeta de los reportes psicopedagógicos la abren las catorce maestras.
+
+Los riesgos más altos de NOVA tienen que ver con los reportes psicopedagógicos y con que no hay respaldos. También entendí que aceptar un riesgo no es ignorarlo: se acepta cuando el colegio no puede resolverlo solo, como pasa con el proveedor de la plataforma o la empresa de fotografía, pero se escribe por qué y cuándo se vuelve a revisar. Con el caso php2shell vi que NOVA ni siquiera sabe qué versión de PHP usa su proveedor, y eso ya es una vulnerabilidad.
+
+### Dudas que me quedaron
+
+- No sé si las calificaciones de probabilidad son las correctas, porque no hay datos de incidentes anteriores en NOVA para comparar.
