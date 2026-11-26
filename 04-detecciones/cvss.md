@@ -11,8 +11,8 @@ nombres de cada pareja salen de `laboratorio/glosario-cvss.md`. Los activos `A-X
 
 ## 1 · CVE-2021-41773 · Apache HTTP Server
 
-**Producto afectado:** Apache HTTP Server 2.4.49. Un cambio en cómo normaliza las rutas permite
-pedir archivos fuera de las carpetas configuradas.
+**Producto afectado:** Apache HTTP Server 2.4.49. Un cambio en cómo revisa las rutas de los archivos
+permite pedir archivos fuera de las carpetas configuradas.
 
 **Vector según el NVD:**
 
@@ -28,7 +28,7 @@ CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H   →   9.8  CRÍTICA
 | `UI:N` | Interacción: Ninguna | Nadie del lado de la víctima tiene que abrir ni aceptar nada |
 | `S:U` | Alcance: Sin cambio | El daño se queda en el servidor donde corre Apache |
 | `C:H` | Confidencialidad: Alta | Se pueden leer archivos fuera de la carpeta del sitio, no solo las páginas publicadas |
-| `I:H` | Integridad: Alta | La ficha dice que, si además están habilitados los scripts CGI, se puede ejecutar código, y con eso cambiar lo que sea en el servidor |
+| `I:H` | Integridad: Alta | La ficha dice que, si además el servidor tiene activado que corra programas, se pueden correr programas del atacante, y con eso cambiar lo que sea en el servidor |
 | `A:H` | Disponibilidad: Alta | Con código ejecutándose en el servidor, se puede apagar el sitio o borrar lo que lo sostiene |
 
 **La que más pesa aquí es `AC:L`, porque el ataque funciona siempre, sin condiciones.** Lo
@@ -68,7 +68,7 @@ que pesa más `PR:N`. En mi prueba, `PR:N` es la segunda, empatada con `AV` y `U
 
 ## 3 · CVE-2014-0160 · Heartbleed
 
-**Producto afectado:** OpenSSL 1.0.1 antes de la 1.0.1g, en su manejo de TLS y DTLS.
+**Producto afectado:** OpenSSL 1.0.1 antes de la 1.0.1g, en sus conexiones cifradas.
 
 **Vector según el NVD:**
 
@@ -82,8 +82,8 @@ CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N   →   7.5  ALTA
 | `AC:L` | Complejidad: Baja | El paquete funciona cada vez, y se puede repetir para sacar más memoria |
 | `PR:N` | Privilegios: Ninguno | El paquete se manda al iniciar la conexión, antes de cualquier usuario y contraseña |
 | `UI:N` | Interacción: Ninguna | Nadie tiene que hacer nada. El servidor responde solo |
-| `S:U` | Alcance: Sin cambio | Lo que se lee es la memoria del mismo proceso que tiene el fallo |
-| `C:H` | Confidencialidad: Alta | La ficha dice que se puede sacar información de la memoria, incluidas llaves privadas |
+| `S:U` | Alcance: Sin cambio | Lo que se lee es la memoria del mismo programa que tiene el fallo |
+| `C:H` | Confidencialidad: Alta | La ficha dice que se puede sacar información de la memoria, incluidas claves secretas |
 | `I:N` | Integridad: Ninguna | El atacante solo lee. No cambia nada en el servidor |
 | `A:N` | Disponibilidad: Ninguna | El servicio sigue funcionando. La víctima ni se entera |
 
